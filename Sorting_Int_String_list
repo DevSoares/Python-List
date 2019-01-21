@@ -1,0 +1,26 @@
+lista1 = [9,'f','e','c',8,3,4,5,'d',6,7,'b',2,'a',1]
+lista2 = []
+lista3 = []
+
+print('Lista1 inicial')
+print(lista1)
+
+while(len(lista1)!=0):    
+        if(type(lista1[0])==str):
+            lista2.append(lista1.pop(0))
+        else:
+            lista3.append(lista1.pop(0))
+ 
+
+lista2.sort()
+lista3.sort()
+lista1 = lista3 +lista2
+
+print('Lista1: ')
+print(lista1)
+print('Lista2: ')
+print(lista2)
+print('Lista3: ')
+print(lista3)
+print('L2+L3:')
+print(lista2+lista3)
